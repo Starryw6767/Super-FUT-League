@@ -1,1 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>SFL | Staff Application</title>
+    <meta name="description" content="Super FUT League Staff Application">
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <main class="container">
+
+        <section class="header">
+            <div class="logo">SFL</div>
+
+            <p class="small-title">SUPER FUT LEAGUE</p>
+
+            <h1>STAFF APPLICATION</h1>
+
+            <p class="intro">
+                Thank you for your interest in joining the
+                <strong>Super FUT League Staff Team.</strong>
+            </p>
+
+            <p class="intro">
+                We are looking for active, responsible, mature, and dedicated
+                members who are willing to help the league grow and keep the
+                community organized.
+            </p>
+
+            <div class="notice">
+                Please answer every question honestly and with enough detail.
+            </div>
+        </section>
+
+
+        <form id="applicationForm">
+
+
+            <!-- GENERAL INFORMATION -->
+
+            <div class="section">
+                <h2>GENERAL INFORMATION</h2>
+
+                <div class="question">
+                    <label for="discord">1. Discord Username</label>
+                    <input
+                        type="text"
+                        id="discord"
+                        name="discord"
+                        placeholder="Example: username"
+                        required
+                    >
+                </div>
+
+                <div class="question">
+                    <label for="age">2. Age</label>
+                    <input
+                        type="number"
+                        id="age"
+                        name="age"
+                        min="13"
+                        max="99"
+                        placeholder="Your age"
+                        required
+                    >
+                </div>
+
+                <div class="question">
+                    <label for="timezone">3. Timezone</label>
+                    <input
+                        type="text"
+                        id="timezone"
+                        name="timezone"
+                        placeholder="Example: CET / UTC+1"
+                        required
+                    >
+                </div>
+
+                <div class="question">
+                    <label for="activity">4. How active are you on Discord?</label>
+                    <textarea
+                        id="activity"
+                        name="activity"
+                        placeholder="Tell us about your usual Discord activity..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="question">
+                    <label for="hours">5. How many hours can you be active per week?</label>
+                    <input
+                        type="text"
+                        id="hours"
+                        name="hours"
+                        placeholder="Example: 10–15 hours"
+                        required
+                    >
+                </div>
+            </div>
+
+
+            <!-- EXPERIENCE -->
+
+            <div class="section">
+                <h2>EXPERIENCE</h2>
+
+                <div class="question">
+                    <label for="experience">
+                        6. Have you previously been staff in another server or league?
+                        If yes, explain.
+                    </label>
+
+                    <textarea
+                        id="experience"
+                        name="experience"
+                        placeholder="Tell us about your previous experience..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="question">
+                    <label for="positions">
+                        7. What staff positions have you previously held?
+                    </label>
+
+                    <textarea
+                        id="positions"
+                        name="positions"
+                        placeholder="Example: Moderator, Admin, Manager..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="question">
+                    <label for="football">
+                        8. Do you have any experience managing football/FUT leagues?
+                    </label>
+
+                    <textarea
+                        id="football"
+                        name="football"
+                        placeholder="Explain your experience..."
+                        required
+                    ></textarea>
+                </div>
+            </div>
+
+
+            <!-- STAFF QUESTIONS -->
+
+            <div class="section">
+                <h2>STAFF QUESTIONS</h2>
+
+                <div class="question">
+                    <label for="why">
+                        9. Why do you want to become a staff member of SFL?
+                    </label>
+
+                    <textarea
+                        id="why"
+                        name="why"
+                        placeholder="Explain why you want to join SFL Staff..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="question">
+                    <label for="bring">
+                        10. What would you bring to the SFL staff team?
+                    </label>
+
+                    <textarea
+                        id="bring"
+                        name="bring"
+                        placeholder="What skills or qualities can you bring?"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="question">
+                    <label for="argument">
+                        11. How would you handle an argument between two members?
+                    </label>
+
+                    <textarea
+                        id="argument"
+                        name="argument"
+                        placeholder="Explain how you would handle the situation..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="question">
+                    <label for="friend">
+                        12. What would you do if a friend broke an SFL rule?
+                    </label>
+
+                    <textarea
+                        id="friend"
+                        name="friend"
+                        placeholder="Explain what you would do..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="question">
+                    <label for="problems">
+                        13. How would you deal with a member who repeatedly causes problems?
+                    </label>
+
+                    <textarea
+                        id="problems"
+                        name="problems"
+                        placeholder="Explain your approach..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="question">
+                    <label for="goodstaff">
+                        14. What do you think makes a good staff member?
+                    </label>
+
+                    <textarea
+                        id="goodstaff"
+                        name="goodstaff"
+                        placeholder="Explain what makes someone a good staff member..."
+                        required
+                    ></textarea>
+                </div>
+            </div>
+
+
+            <!-- AVAILABILITY -->
+
+            <div class="section">
+                <h2>AVAILABILITY & COMMITMENT</h2>
+
+                <div class="question">
+                    <label for="active">
+                        15. Are you willing to be active and help when needed?
+                    </label>
+
+                    <select id="active" name="active" required>
+                        <option value="">Select an answer</option>
+                        <option value="Yes">Yes</option>
+                        <option value="Mostly">Mostly</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="rules">
+                        16. Are you willing to follow all SFL rules and staff guidelines?
+                    </label>
+
+                    <select id="rules" name="rules" required>
+                        <option value="">Select an answer</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="ideas">
+                        17. Do you have any ideas for improving Super FUT League?
+                    </label>
+
+                    <textarea
+                        id="ideas"
+                        name="ideas"
+                        placeholder="Share your ideas..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="question">
+                    <label for="anything">
+                        18. Is there anything else you would like us to know?
+                    </label>
+
+                    <textarea
+                        id="anything"
+                        name="anything"
+                        placeholder="Anything else you want to tell us..."
+                        required
+                    ></textarea>
+                </div>
+            </div>
+
+
+            <!-- IMPORTANT -->
+
+            <div class="important">
+                <h2>IMPORTANT</h2>
+
+                <p>
+                    Please make sure your answers are honest, detailed, and written
+                    by yourself.
+                </p>
+
+                <p>
+                    Submitting an application does not guarantee acceptance.
+                    Applications will be reviewed by the
+                    <strong>SFL Management Team</strong>.
+                </p>
+            </div>
+
+
+            <button type="submit" id="submitButton">
+                SUBMIT APPLICATION
+            </button>
+
+            <div id="status"></div>
+
+        </form>
+
+
+        <footer>
+            <strong>SUPER FUT LEAGUE — SFL</strong>
+            <span>STAFF APPLICATIONS</span>
+        </footer>
+
+    </main>
+
+
+    <script>
+
+        const form = document.getElementById("applicationForm");
+        const button = document.getElementById("submitButton");
+        const status = document.getElementById("status");
+
+        form.addEventListener("submit", async function(event) {
+
+            event.preventDefault();
+
+            button.disabled = true;
+            button.textContent = "SUBMITTING...";
+            status.textContent = "";
+            status.className = "";
+
+            const formData = new FormData(form);
+
+            const data = Object.fromEntries(formData.entries());
+
+            try {
+
+                const response = await fetch("/api/application", {
+
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+
+                    body: JSON.stringify(data)
+
+                });
+
+                const result = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(result.error || "Something went wrong.");
+                }
+
+                status.textContent =
+                    "Application submitted successfully! Thank you for applying.";
+
+                status.className = "success";
+
+                form.reset();
+
+                button.textContent = "APPLICATION SUBMITTED";
+
+            } catch (error) {
+
+                console.error(error);
+
+                status.textContent =
+                    "Something went wrong. Please try again later.";
+
+                status.className = "error";
+
+                button.disabled = false;
+                button.textContent = "SUBMIT APPLICATION";
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
